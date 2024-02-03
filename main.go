@@ -47,7 +47,7 @@ type ParsedList struct {
 // Функция для загрузки файла и переименования
 func downloadAndRename(url, newName string) error {
 	// Загрузка файла
-	err := downloadFile(url, filepath.Join(*dataPath, newName+".dat"))
+	err := downloadFile(url, filepath.Join(*dataPath, newName))
 	if err != nil {
 		return err
 	}
