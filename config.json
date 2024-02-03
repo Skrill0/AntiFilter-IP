@@ -1,0 +1,31 @@
+{
+  "input": [
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "antifilter",
+        "uri": "./data/antifilter.txt",
+        "onlyIPType": "ipv4"
+      }
+    },
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "antifilter-community",
+        "uri": "./data/antifilter-community.txt",
+        "onlyIPType": "ipv4"
+      }
+    }
+  ],
+  "output": [
+    {
+      "type": "v2rayGeoIPDat",
+      "action": "output",
+      "args": {
+        "outputName": "geoip.dat"
+      }
+    }
+  ]
+}
